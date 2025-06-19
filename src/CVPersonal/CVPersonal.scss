@@ -1,0 +1,15 @@
+@use "../variables.scss" as *;
+
+.cv-personal {
+    grid-area: personal;
+    padding: $main-gap;
+    background-color: #eee;
+    text-align: center;   
+
+    .cv-photo {
+        width: 100%;
+        margin-top: $main-gap;
+        margin-bottom: $main-gap;
+        border-radius: 50%;
+    }
+}

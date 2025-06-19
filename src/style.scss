@@ -1,4 +1,7 @@
-$main-gap: 20px;
+@use "./variables.scss" as *;
+@use "./CVHeader/CVHeader.scss";
+@use "./CVPersonal/CVPersonal.scss";
+@use "./CVDetails/CVDetails.scss";
 
 * {
     box-sizing: border-box;
@@ -16,7 +19,7 @@ ul {
 
 h2 {
     margin-top: $main-gap;
-    margin-bottom: $main-gap / 2;
+    margin-bottom: $main-gap;
 }
 
 .cv-main {
@@ -29,29 +32,4 @@ h2 {
     border: 1px solid #eee;
     padding: $main-gap;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.cv-header {
-    grid-area: header;
-    padding: $main-gap;
-    text-align: center;   
-}
-
-.cv-personal {
-    grid-area: personal;
-    padding: $main-gap;
-    background-color: #eee;
-    text-align: center;   
-
-    .cv-photo {
-        width: 100%;
-        margin-top: $main-gap;
-        margin-bottom: $main-gap;
-        border-radius: 50%;
-    }
-}
-.cv-details {
-    grid-area: details;
-    text-align: center; 
-    background-color: #fafafa;
 }
